@@ -1,20 +1,143 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>CodeWithKhushi</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Code With Khushi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0b0c; --card:#141417; --text:#e8e8ea; --muted:#a6a6ad; --brand:#6ae3ff; --accent:#b892ff; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:600}
+    nav a:hover{color:var(--text)}
+    .hero{margin:48px 0;padding:32px;border:1px solid #232327;border-radius:18px;background:linear-gradient(180deg,#141417,transparent)}
+    .hero h1{font-size:36px;line-height:1.1;margin:0 0 10px}
+    .hero p{color:var(--muted);max-width:820px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:22px}
+    .card{background:var(--card);border:1px solid #232327;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .list{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+    .list a{color:var(--brand);text-decoration:none} .list a:hover{text-decoration:underline}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#1d1d22;border:1px solid #2a2a31;color:var(--muted);font-size:12px}
+    footer{margin:48px 0;color:var(--muted);font-size:14px}
+    .section-title{display:flex;align-items:center;justify-content:space-between;margin-top:40px;margin-bottom:12px}
+    .section-title h2{margin:0;font-size:22px}
+    .ghost{opacity:.7}
+  </style>
 </head>
 <body>
-    <h1>Hello 👋 I’m CodeWithKhushi!</h1>
-    <p>Welcome to my new website 🚀</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>CodeWithKhushi</title>
-</head>
-<body>
-    <h1>Hello 👋 I’m CodeWithKhushi!</h1>
-    <p>Welcome to my new website 🚀</p>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span class="pill">CWK</span>
+        <strong>Code With Khushi</strong>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#achievements">CWK Achievements</a>
+        <a href="#tech">Technical</a>
+        <a href="#resources">Resources</a>
+        <a href="#articles">Articles</a>
+        <a class="ghost" href="#labs">Labs</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <h1>Hi, I’m Khushi — software engineer, builder, and tech creator.</h1>
+      <p>
+        I ship products at Heritage Tile (Odoo, Python, JS), and I share what I learn with 100k+ on Instagram.
+        This site is my hub for <strong>technical achievements</strong>, <strong>CWK milestones</strong>, <strong>resources</strong>,
+        and <strong>articles</strong>. Soon: games, helpdesk, booking, newsletter, subscribers-only, and more.
+      </p>
+    </section>
+
+    <div class="section-title" id="tech"><h2>Technical Achievements</h2><span class="pill">v0.1</span></div>
+    <div class="grid">
+      <article class="card">
+        <h3>AI Design Agent for Mosaic Tiles</h3>
+        <p class="ghost">Adobe Illustrator + Python + LLMs</p>
+        <p>Natural language → production-ready vector patterns; parametric geometry; 12″×12″ module segmentation.</p>
+        <a href="#" class="pill">Case Study (soon)</a>
+      </article>
+      <article class="card">
+        <h3>Consultation → Quotation (CTQ)</h3>
+        <p class="ghost">Odoo 16/18, JS, Vector DB</p>
+        <p>Auto-captures notes, retrieves patterns, and generates PDF quotations; cut consultation time dramatically.</p>
+        <a href="#" class="pill">Repo / Demo (soon)</a>
+      </article>
+      <article class="card">
+        <h3>FedEx REST Integration</h3>
+        <p class="ghost">Shipping rates + labels</p>
+        <p>REST integration with label certification; supports ground/express with error handling & retries.</p>
+        <a href="#" class="pill">Write-up (soon)</a>
+      </article>
+    </div>
+
+    <div class="section-title" id="achievements"><h2>CWK Achievements</h2><a href="#" class="pill">See all (soon)</a></div>
+    <div class="grid">
+      <div class="card"><h3>100k → 1M Plan</h3><p>Documenting the journey to 1M followers: series formats, growth experiments, analytics.</p></div>
+      <div class="card"><h3>Top Viral Reel</h3><p>“Trying to become a hacker with Kali Linux” storytelling format; 5k+ net followers in days.</p></div>
+      <div class="card"><h3>Speaking & Collabs</h3><p>Guest sessions, brand partnerships, and community events (calendar coming soon).</p></div>
+    </div>
+
+    <div class="section-title" id="resources"><h2>Resources</h2><a href="#" class="pill">All resources</a></div>
+    <div class="grid">
+      <div class="card">
+        <h3>Links</h3>
+        <ul class="list">
+          <li><a href="https://github.com/CodeWithKhushi" target="_blank">GitHub</a></li>
+          <li><a href="#" target="_blank">Notes (GDrive/Notion)</a></li>
+          <li><a href="#" target="_blank">PDFs & Docs</a></li>
+          <li><a href="#" target="_blank">Linktree-style Page (soon)</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Downloads</h3>
+        <ul class="list">
+          <li><a href="#">Resume.pdf</a></li>
+          <li><a href="#">CTQ Whitepaper.pdf</a></li>
+          <li><a href="#">Design Prompting Cheatsheet.pdf</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p>DM me on Instagram or email <a href="mailto:hello@codewithkhushi.com">hello@codewithkhushi.com</a></p>
+      </div>
+    </div>
+
+    <div class="section-title" id="articles"><h2>Articles</h2><a href="#" class="pill">RSS (soon)</a></div>
+    <div class="grid">
+      <article class="card">
+        <h3>Teaching AI about Scale (Tiles)</h3>
+        <p class="ghost">Thoughts • Draft</p>
+        <p>Why generative models struggle with absolute scale & how to prompt/evaluate for sheet-based mosaics.</p>
+      </article>
+      <article class="card">
+        <h3>From Consultation to Quotation</h3>
+        <p class="ghost">Process • Draft</p>
+        <p>How vector DBs and structured notes slash the latency from call → quote.</p>
+      </article>
+      <article class="card">
+        <h3>Shipping Integrations that Don’t Flake</h3>
+        <p class="ghost">Engineering • Draft</p>
+        <p>Hard-won lessons from FedEx REST, labels, and robust retries.</p>
+      </article>
+    </div>
+
+    <div class="section-title" id="labs"><h2>Next: Labs</h2><span class="pill">coming soon</span></div>
+    <div class="grid">
+      <div class="card"><h3>Mini Games</h3><p>JS/Canvas coding puzzles for DSA & algorithms.</p></div>
+      <div class="card"><h3>Helpdesk App</h3><p>Lightweight ticketing with FAQs + AI assistant.</p></div>
+      <div class="card"><h3>Booking + Newsletter</h3><p>Cal.com/Calendly integration & weekly digest.</p></div>
+    </div>
+
+    <footer>
+      © <span id="y"></span> Code With Khushi · Built with love & lots of coffee.
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
